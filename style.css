@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.to-do-app{
+  width: max(50%,700px);
+  height: 70vh;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  gap: 150px;
+  background-color: rgb(127, 187, 255);
+}
+
+.task-add{
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.task-add input{
+  padding: 10px 10px;
+  border: none;
+}
+
+.task-add button{
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+}
+
+.app-right p {
+  margin:0;
+  font-size: 19px;
+}
+
+.app-right button {
+  padding: 7px 10px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  margin-left: 78px;
+
+}
+.task-item{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+@media (max-width:450px) {
+  .to-do-app{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+  .app-right button {
+    padding: 4px 5px;
+    margin-left: 0px;
+  }
+
+  .task-item{
+    flex-direction: column;
+    align-items:start;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .app-right p {
+    margin-bottom:5px;
+  
+  }
+}
