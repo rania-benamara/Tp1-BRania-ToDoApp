@@ -7,17 +7,36 @@
   <title>To Do List</title>
 </head>
 <body>
+  <!--div pour to-do-app pour contenir l'application -->
   <div class="to-do-app">
-    <div class="app-left">
+
+    <!--div pour app-top pour contenir la partie haute de l'application input et les buttons ajouter s'abonner-->
+    <div class="app-top">
+
+      <!--Titre -->
       <h1>To Do List</h1>
+
+      <!--div task-add pour le input et les deux bouttons ajouter et s'abonner-->
       <div class="task-add">
         <input type="text" id="task-input" placeholder="Add a task">
-        <button id="add-task-btn">Add</button>
+        <button id="add-task-btn">Ajouter</button>
+        <button id="sub-btn">S'abonner</button>
       </div>
     </div>
-
-    <div class="app-right" id="task-list">
-      
+  
+    <!--div app-bottom pour la partie bas de l'application pour contenir deux div pour l'ajout des taches et l'affichage des abonnées-->
+    <div class="app-bottom">
+      <div id="task-list"></div> <!--ajoouter les taches-->
+      <div id="sub-form" style="display: none;">
+        <form id="subscription-form">
+          <label for="nomutilisateur">Nom d'utilsateur</label>
+          <input type="text" id="nomutilisateur" name="nomutilisateur" required>
+          <label for="address">Address Email:</label>
+          <input type="text" id="address" name="address" required>
+          <button type="button" id="submit-button">S'abonner</button>
+        </form>
+      </div>
+      <div id="abonner-list"></div> <!-- afficher les abonnées -->
     </div>
   </div>
 

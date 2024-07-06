@@ -1,80 +1,122 @@
-*{
+* {
   margin: 0;
-  box-sizing: border-box;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.to-do-app{
-  width: max(50%,700px);
-  height: 70vh;
-  margin: auto;
-  margin-top: 30px;
+
+body {
   display: flex;
-  gap: 150px;
-  background-color: rgb(127, 187, 255);
-}
-
-.task-add{
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
-}
-.task-add input{
-  padding: 10px 10px;
-  border: none;
+  height: 100vh;
 }
 
-.task-add button{
+.to-do-app {
+  max-width: 700px;
+  width: 100%;
+  background-color: #36898f;
+  padding: 25px;
+
+}
+
+.app-top{
+  text-align: center;
+}
+
+.app-bottom {
+  margin-top: 37px;
+}
+h1 {
+  font-size: 31px;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.task-add {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 19px;
+  border:none;
+}
+
+#add-task-btn,
+#sub-btn, #submit-button{
   padding: 10px 15px;
   cursor: pointer;
-  background-color: green;
+  background-color: #2ae33d;
   border: none;
+  color: black;
+  font-size: 18px;
+  border-radius: 4px;
 }
 
-.app-right p {
-  margin:0;
-  font-size: 19px;
+#task-list {
+  margin-top: 25px;
 }
 
-.app-right button {
-  padding: 7px 10px;
-  cursor: pointer;
-  background-color: red;
-  border: none;
-  margin-left: 78px;
+.task-item {
 
-}
-.task-item{
-  display: flex; 
-  align-items: center;
+  padding: 15px;
+  border:none;
+  margin-bottom: 13px;
+  display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  padding: 10px;
+  align-items: center;
 }
 
-@media (max-width:450px) {
-  .to-do-app{
-    
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
+.task-item p {
+  margin: 0;
+}
 
-
-  .app-right button {
-    padding: 4px 5px;
-    margin-left: 0px;
-  }
-
-  .task-item{
-    flex-direction: column;
-    align-items:start;
-    margin-bottom: 5px;
-    padding: 5px;
-  }
-
-  .app-right p {
-    margin-bottom:5px;
+.remove-btn, .edit-btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  border-radius: none;
   
-  }
+}
+#subscribers-list {
+  margin-top: 20px;
+}
+
+.subscriber-item {
+  
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.subscriber-item p {
+  margin: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+form button[type="submit"] {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+ 
 }
