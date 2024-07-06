@@ -7,8 +7,8 @@
 <p>Affichage de la liste des abonnées</p>
 
 <h1>Installation</h1>
-<code>git clone https://github.com/rania-benamara/TP1-BRania-ToDoApp.git</code>
-<code>cd TP1-BRania-ToDoApp</code>
+<code>git clone https://github.com/rania-benamara/TP1-BRania-ToDoApp.git</code><br/>
+<code>cd TP1-BRania-ToDoApp</code><br/>
 
-<code>npm install</code>
-<code>npm start</code>
+<code>npm install</code><br/>
+<code>npm start</code><br/>
