@@ -5,3 +5,10 @@
 <p>Ajouter,modifier et supprimer des taches</p>
 <p>S'abonner avec un nom d'utilisateur et address email</p>
 <p>Affichage de la liste des abonnées</p>
+
+<h1>Installation</h1>
+<code>git clone https://github.com/rania-benamara/TP1-BRania-ToDoApp.git</code>
+<code>cd TP1-BRania-ToDoApp</code>
+
+<code>npm install</code>
+<code>npm start</code>
